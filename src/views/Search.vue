@@ -7,7 +7,8 @@
         <div class="line"></div>
       </h2>
     </div>
-    <div class="service">
+
+    <div @click="choose(-1)" class="service" :class="chooseIndex === -1 ?'active':''">
       <img src="../assets/img/service.png" alt />
       <span>总计0人</span>
     </div>
@@ -137,7 +138,7 @@ export default {
   }
 }
 .service {
-  background: #fff8f8;
+  background: #151822;
   border-radius: 0.13rem;
   margin: 0 0.2rem;
   padding: 0.15rem 0;
@@ -145,6 +146,10 @@ export default {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 0 0 4px 0 #8d8d8d;
+  &.active {
+    background: #fff;
+  }
   img {
     width: 0.96rem;
     height: 0.93rem;
@@ -175,7 +180,7 @@ export default {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        padding: 0.06rem 0;
+        padding: 0.2rem 0;
         background: url("../assets/img/sanjiao.png") center center no-repeat;
         background-size: 90% 100%;
         img {
@@ -196,6 +201,11 @@ export default {
         }
       }
       &.active {
+        .bg {
+          background: url("../assets/img/sanjiao_active.png") center center
+            no-repeat;
+          background-size: 90% 100%;
+        }
         .line {
           background: #e04141 !important;
         }
@@ -320,13 +330,13 @@ export default {
   background: #0e0b1c;
   .back,
   .ok {
-    width: 1.92rem;
-    line-height: 0.6rem;
+    width: 3rem;
+    line-height: 0.8rem;
     text-align: center;
     color: #fff;
-    font-size: 0.29rem;
+    font-size: 0.3rem;
     font-weight: 600;
-    border-radius: 0.3rem;
+    border-radius: 0.4rem;
     background: url("../assets/img/back.png") center center no-repeat;
     background-size: cover;
   }

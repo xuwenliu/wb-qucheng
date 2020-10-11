@@ -7,7 +7,7 @@
       </router-link>
       <router-link tag="li" :to="{name:'Mine'}" :class="currentIndex===1?'active':''">
         <img src="../assets/img/img1.png" alt />
-        <span>我的</span>
+        <span>ta</span>
       </router-link>
     </ul>
   </div>

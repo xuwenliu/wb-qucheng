@@ -136,23 +136,24 @@ export default {
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   .left {
     .avatar-radius {
-      width: 0.88rem;
-      height: 0.88rem;
-      background: url("../assets/img/avatar_radius.png") no-repeat;
+      width: 1.2rem;
+      height: 1.2rem;
+      background: url("../assets/img/avatar_radius.png") center center no-repeat;
       background-size: contain;
     }
   }
   .right {
     flex: 1;
     padding-left: 0.2rem;
+    margin-top: 0.2rem;
     .right-top {
       display: flex;
       justify-content: space-between;
       align-items: center;
       .desc {
+        text-align: left;
         h2 {
           font-size: 0.27rem;
           font-weight: 600;
@@ -205,13 +206,14 @@ export default {
   margin-top: -22%;
   .title {
     font-size: 0.19rem;
-    font-weight: 600;
-    color: #ff4b82;
     padding: 0.05rem 0;
     border-bottom: 1px dashed #fff;
     margin: 0 0.1rem;
     span {
       position: relative;
+      font-size: 0.19rem;
+      font-weight: 600;
+      color: #ff4b82;
       &::after,
       &::before {
         content: "";
@@ -243,9 +245,9 @@ export default {
   ul {
     li {
       float: left;
-      width: 31%;
-      margin-left: 0.14rem;
-      margin-top: 0.14rem;
+      width: 32%;
+      margin-left: 0.07rem;
+      margin-top: 0.07rem;
       img {
         width: 100%;
         height: 100%;

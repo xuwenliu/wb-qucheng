@@ -1,9 +1,9 @@
 <template>
   <div class="index">
-    <Header />
+    <!-- <Header /> -->
     <div class="search">
       <input class="input" type="text" placeholder="输入去城号/手机号/名字找ta" />
-      <button @click="goSearch" class="btn">搜索</button>
+      <button class="btn">搜索</button>
     </div>
     <div class="nav">
       <ul>
@@ -13,7 +13,7 @@
           <span v-if="nav===1" class="ad-group">广告联盟</span>
         </li>
       </ul>
-      <div v-if="nav===0" class="more">
+      <div v-if="nav===0" class="more" @click="goSearch">
         <img src="../assets/img/hot.png" alt />
         <span>
           选择行业
@@ -46,7 +46,7 @@
                   <li>经纪人</li>
                 </ul>
               </div>
-              <div class="desc">简介：毕业于北京舞蹈学院，从教年限：13年，原中国国儿童艺术剧院演员，温州市鹿城舞蹈家协会会员并</div>
+              <div class="desc">简介：毕业于北京舞蹈学院，从教年限：13年，原中国国儿童艺术剧院演员，温州市鹿城舞蹈家协会会员并温州市鹿城舞蹈家协会会员并</div>
             </div>
           </div>
           <div class="bg2">
@@ -64,7 +64,7 @@
           <div class="bg1">
             <div class="left">
               <img src="../assets/img/avatar.png" alt class="avatar" />
-              <h2>+关注</h2>
+              <span class="attention">已关注</span>
               <span>35分钟前</span>
             </div>
             <div class="right">
@@ -77,7 +77,7 @@
                   <li>经纪人</li>
                 </ul>
               </div>
-              <div class="desc">简介：毕业于北京舞蹈学院，从教年限：13年，原中国国儿童艺术剧院演员，温州市鹿城舞蹈家协会会员并</div>
+              <div class="desc">简介：毕业于北京舞蹈学院，从教年限：13年，原中国国儿童艺术剧院演员，温州市鹿城舞蹈家协会会员并温州市鹿城舞蹈家协会会员并</div>
             </div>
           </div>
           <div class="bg2">
@@ -109,6 +109,13 @@
           </li>
         </ul>
       </div>
+
+      <div class="choose-title">
+        <p @click="openDailog">
+          <span>选</span> 择细分类别
+        </p>
+      </div>
+
       <div class="card">
         <div class="card-top">
           <div class="bg1">
@@ -128,6 +135,52 @@
               <div class="address-limit">
                 <p>
                   <img src="../assets/img/bzbf.png" alt />
+                  <span>杭州市 星光大道广场</span>
+                </p>
+                <p>已分80元</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg2">
+            <span>新客户配眼镜全场8折送镜框限本周</span>
+          </div>
+        </div>
+        <div class="card-bottom">
+          <div class="box">
+            <span>+关注</span>
+            <div class="right">
+              <p>
+                <span>点击进入</span>
+                <img src="../assets/img/right-finger.png" alt />
+              </p>
+              <button>
+                <img src="../assets/img/axbf.png" alt />
+                <span>1000人</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <div class="bg1">
+            <div class="left">
+              <img src="../assets/img/avatar.png" alt class="avatar" />
+            </div>
+            <div class="right">
+              <div class="title">
+                <h2>
+                  杭州滨江长河明镜眼镜店
+                  <span>
+                    100元
+                    <img src="../assets/img/jbbf.png" alt />
+                  </span>
+                </h2>
+              </div>
+              <div class="address-limit">
+                <p>
+                  <img src="../assets/img/gsbf.png" alt />
                   <span>文化传媒 报社</span>
                 </p>
                 <p>已分80元</p>
@@ -173,7 +226,7 @@
               </div>
               <div class="address-limit">
                 <p>
-                  <img src="../assets/img/bzbf.png" alt />
+                  <img src="../assets/img/gsbf.png" alt />
                   <span>文化传媒 报社</span>
                 </p>
                 <p>已分80元</p>
@@ -219,53 +272,7 @@
               </div>
               <div class="address-limit">
                 <p>
-                  <img src="../assets/img/bzbf.png" alt />
-                  <span>文化传媒 报社</span>
-                </p>
-                <p>已分80元</p>
-              </div>
-            </div>
-          </div>
-          <div class="bg2">
-            <span>新客户配眼镜全场8折送镜框限本周</span>
-          </div>
-        </div>
-        <div class="card-bottom">
-          <div class="box">
-            <span>+关注</span>
-            <div class="right">
-              <p>
-                <span>点击进入</span>
-                <img src="../assets/img/right-finger.png" alt />
-              </p>
-              <button>
-                <img src="../assets/img/axbf.png" alt />
-                <span>1000人</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-top">
-          <div class="bg1">
-            <div class="left">
-              <img src="../assets/img/avatar.png" alt class="avatar" />
-            </div>
-            <div class="right">
-              <div class="title">
-                <h2>
-                  杭州滨江长河明镜眼镜店
-                  <span>
-                    100元
-                    <img src="../assets/img/jbbf.png" alt />
-                  </span>
-                </h2>
-              </div>
-              <div class="address-limit">
-                <p>
-                  <img src="../assets/img/bzbf.png" alt />
+                  <img src="../assets/img/gsbf.png" alt />
                   <span>文化传媒 报社</span>
                 </p>
                 <p>已分80元</p>
@@ -299,18 +306,16 @@
 
       <div v-if="showDailog" @click="closeDailog" class="dailog">
         <div class="dailog-body clearfix">
-          <div class="title">
-            <span>选</span> 择细分类别
-          </div>
           <div class="content">
             <ul class="clearfix">
-              <li>KTV</li>
-              <li>酒吧</li>
-              <li>茶馆</li>
-              <li>轰趴团建</li>
-              <li>电影演出</li>
-              <li>电玩密室</li>
-              <li>其他</li>
+              <li
+                v-for="(item,index) in category"
+                :key="item"
+                @click="chooseCategory(index)"
+                :class="categoryIndex === index ? 'active':''"
+              >
+                <span>{{item}}</span>
+              </li>
             </ul>
           </div>
         </div>
@@ -322,19 +327,29 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
+// import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 export default {
   name: "Home",
   components: {
-    Header,
+    // Header,
     Footer
   },
   data() {
     return {
       nav: 0,
-      fastIndex: "",
+      fastIndex: 0,
       showDailog: false,
+      categoryIndex: "",
+      category: [
+        "KTV",
+        "酒吧",
+        "茶馆",
+        "轰趴团建",
+        "电影演出",
+        "电玩密室",
+        "其他"
+      ],
       fastList: [
         {
           name: "美食/生活购物",
@@ -374,14 +389,16 @@ export default {
     },
     fastChange(index) {
       this.fastIndex = index;
-      this.openDailog();
     },
     openDailog() {
       this.showDailog = true;
     },
     closeDailog() {
       this.showDailog = false;
-      this.fastIndex = "";
+    },
+    chooseCategory(index) {
+      this.categoryIndex = index;
+      this.closeDailog();
     }
   },
   watch: {
@@ -399,22 +416,23 @@ export default {
 <style scoped lang="scss">
 .index {
   background: #0e0b1c;
-  padding-top: 1rem;
+  // padding-top: 1rem;
   padding-bottom: 1.2rem;
 }
 
 .search {
-  padding: 0.18666rem 0.26667rem;
-  height: 0.85333rem;
+  padding: 0.18666rem 0.4rem;
+  height: 0.5rem;
   display: flex;
   .btn {
-    width: 1.7866rem;
+    width: 0.9rem;
     background: #ff4b82;
     color: #fff;
     border: none;
     outline: none;
     border-radius: 0 0.32rem 0.32rem 0;
-    font-size: 0.3733rem;
+    font-size: 0.19rem;
+    font-weight: 500;
   }
   .input {
     flex: 1;
@@ -422,11 +440,11 @@ export default {
     border: none;
     padding-left: 0.26667rem;
     outline: none;
-    font-size: 0.2;
+    font-size: 0.2rem;
   }
 }
 .nav {
-  padding: 0.1866rem 0 0.53333rem;
+  padding: 0.1866rem 0 0.25rem;
   margin: 0 0.26667rem;
   display: flex;
   justify-content: space-between;
@@ -439,7 +457,7 @@ export default {
       color: #ffffff;
       font-size: 0.24rem;
       line-height: 0.32rem;
-      margin-right: 0.2rem;
+      margin-right: 0.4rem;
       position: relative;
       .ad-group {
         position: absolute;
@@ -460,7 +478,7 @@ export default {
           height: 0.05rem;
           background: #ff4b82;
           display: block;
-          bottom: -0.24rem;
+          bottom: -0.15rem;
         }
       }
     }
@@ -479,7 +497,7 @@ export default {
       line-height: 0.27rem;
       font-size: 0.19rem;
       i {
-        vertical-align: middle;
+        vertical-align: bottom;
       }
     }
   }
@@ -507,13 +525,14 @@ export default {
   .card-top {
     position: relative;
     min-height: 2rem;
+
     .bg1 {
       position: absolute;
       z-index: 1;
       background: url(../assets/img/bg1.png) center center no-repeat;
       background-size: 100% 100%;
       display: flex;
-      padding: 0.26667rem;
+      padding: 0.2rem;
       margin: 0 0.08rem;
       box-sizing: border-box;
       .left {
@@ -523,19 +542,25 @@ export default {
         align-items: center;
         margin-right: 0.05rem;
         .avatar {
-          width: 0.56rem;
-          height: 0.56rem;
+          width: 0.7rem;
+          height: 0.7rem;
           display: block;
+          align-self: flex-start;
         }
         h2 {
-          font-size: 0.32rem;
+          font-size: 0.16rem;
           font-weight: 500;
           color: #ff4b82;
+          align-self: flex-start;
+          margin: 0.04rem 0;
         }
         span {
           font-weight: 500;
           color: #999999;
-          font-size: 0.16rem;
+          font-size: 0.11rem;
+          &.attention {
+            margin: 0.04rem 0;
+          }
         }
       }
       .right {
@@ -575,7 +600,7 @@ export default {
             border: 1px solid #ff4b82;
             text-align: center;
             display: inline-block;
-            margin-left: 0.05rem;
+            margin-left: 0.1rem;
           }
         }
         .desc {
@@ -593,7 +618,7 @@ export default {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          margin-top: 0.17rem;
+          margin-bottom: 0.1rem;
           p {
             font-size: 0.19rem;
             font-weight: 500;
@@ -631,12 +656,14 @@ export default {
         line-height: 0.53333rem;
         position: absolute;
         bottom: 0;
-        left: 0.43rem;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
       }
     }
   }
   .card-bottom {
-    padding: 0.2rem 0;
+    padding: 0 0 0.2rem;
     margin: 0 0.23rem;
     border-bottom: 1px solid #979797;
 
@@ -651,6 +678,7 @@ export default {
       }
       .right {
         display: flex;
+        align-items: center;
         p {
           font-size: 0.16rem;
           margin-right: 0.07rem;
@@ -690,12 +718,12 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.4rem 0;
+    padding: 0.3rem 0 0.07rem;
     margin: 0 0.23rem;
     border-bottom: 1px solid #979797;
 
     img {
-      width: 30%;
+      width: 32%;
       vertical-align: middle;
       border-radius: 0.1rem;
     }
@@ -707,22 +735,19 @@ export default {
   bottom: 2rem;
   z-index: 99;
   img {
-    width: 3.33333rem;
-    height: 1.28rem;
+    width: 1.67rem;
+    height: 0.64rem;
     display: block;
   }
 }
 .merchant {
   .card {
-    &:nth-of-type(2) {
-      margin-top: 1rem;
-    }
     .card-top {
       .bg1 {
         width: 97%;
       }
       .bg2 {
-        bottom: 0.1rem;
+        bottom: 0.3rem;
       }
     }
   }
@@ -785,6 +810,28 @@ export default {
       }
     }
   }
+  .choose-title {
+    text-align: right;
+    font-size: 0.22rem;
+    font-weight: 500;
+    color: #e3b5bb;
+    margin: 0.1rem 0.23rem;
+    padding: 0.1rem;
+    border-bottom: 1px solid #979797;
+
+    p {
+      display: inline-block;
+      span {
+        width: 0.33rem;
+        height: 0.33rem;
+        display: inline-block;
+        color: #fffdfe;
+        background: #936b6b;
+        border-radius: 0.05rem;
+        text-align: center;
+      }
+    }
+  }
 }
 .dailog {
   position: fixed;
@@ -797,22 +844,8 @@ export default {
   z-index: 100;
   .dailog-body {
     padding: 0 0.14rem;
-    margin-top: 5.2rem;
-    .title {
-      text-align: right;
-      font-size: 0.22rem;
-      font-weight: 500;
-      color: #e3b5bb;
-      span {
-        width: 0.33rem;
-        height: 0.33rem;
-        display: inline-block;
-        color: #fffdfe;
-        background: #936b6b;
-        border-radius: 0.05rem;
-        text-align: center;
-      }
-    }
+    margin-top: 3.8rem;
+
     .content {
       float: right;
       background: #ffecdf;
@@ -833,6 +866,14 @@ export default {
           color: #333333;
           &:nth-child(3n-2) {
             border: none;
+          }
+          &.active {
+            span {
+              background: #ff4b82;
+              color: #f9f9f9;
+              padding: 0.06rem 0.1rem;
+              border-radius: 0.08rem;
+            }
           }
         }
       }
