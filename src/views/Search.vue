@@ -1,6 +1,5 @@
 <template>
   <div class="index">
-    <Header isBack name="去城" />
     <div class="title">
       <h2>
         <span>请选择您要搜索的行业</span>
@@ -37,7 +36,6 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
 export default {
   name: "Search",
   data() {
@@ -85,9 +83,7 @@ export default {
       ]
     };
   },
-  components: {
-    Header
-  },
+  components: {},
   methods: {
     choose(index) {
       this.chooseIndex = index;
@@ -99,7 +95,6 @@ export default {
 <style scoped lang="scss">
 .index {
   background: #0e0b1c;
-  padding-top: 1rem;
   padding-bottom: 1.65rem;
 }
 .title {

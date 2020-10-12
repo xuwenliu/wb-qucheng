@@ -44,7 +44,7 @@ export default {
   width: 100%;
   padding: 0.2rem 0.17rem;
   box-sizing: border-box;
-  font-size: 0.24rem;
+  font-size: 0.36rem;
   color: #fff;
   font-weight: 500;
   display: flex;

@@ -416,31 +416,31 @@ export default {
 <style scoped lang="scss">
 .index {
   background: #0e0b1c;
-  // padding-top: 1rem;
+  padding-top: 0.3rem;
   padding-bottom: 1.2rem;
 }
 
 .search {
-  padding: 0.18666rem 0.4rem;
-  height: 0.5rem;
+  padding: 0.2rem 0.4rem;
+  height: 0.7rem;
   display: flex;
   .btn {
-    width: 0.9rem;
+    width: 1.34rem;
     background: #ff4b82;
     color: #fff;
     border: none;
     outline: none;
     border-radius: 0 0.32rem 0.32rem 0;
-    font-size: 0.19rem;
+    font-size: 0.28rem;
     font-weight: 500;
   }
   .input {
     flex: 1;
     border-radius: 0.32rem 0 0 0.32rem;
     border: none;
-    padding-left: 0.26667rem;
+    padding-left: 0.2rem;
     outline: none;
-    font-size: 0.2rem;
+    font-size: 0.28rem;
   }
 }
 .nav {
@@ -455,21 +455,21 @@ export default {
     li {
       font-weight: 500;
       color: #ffffff;
-      font-size: 0.24rem;
+      font-size: 0.36rem;
       line-height: 0.32rem;
       margin-right: 0.4rem;
       position: relative;
       .ad-group {
         position: absolute;
-        font-size: 0.16rem;
+        font-size: 0.24rem;
         display: block;
         bottom: -0.24rem;
         width: 200%;
-        right: -200%;
+        right: -170%;
       }
       &.active {
         color: #ff4b82;
-        font-size: 0.32rem;
+        font-size: 0.48rem;
         position: relative;
         &::after {
           content: "";
@@ -478,7 +478,7 @@ export default {
           height: 0.05rem;
           background: #ff4b82;
           display: block;
-          bottom: -0.15rem;
+          bottom: -0.17rem;
         }
       }
     }
@@ -486,18 +486,17 @@ export default {
   .more {
     display: flex;
     img {
-      width: 0.21rem;
-      height: 0.24rem;
+      width: 0.32rem;
+      height: 0.36rem;
       vertical-align: middle;
       margin-right: 0.1rem;
     }
     span {
       font-weight: 600;
       color: #ffffff;
-      line-height: 0.27rem;
-      font-size: 0.19rem;
+      font-size: 0.28rem;
       i {
-        vertical-align: bottom;
+        vertical-align: middle;
       }
     }
   }
@@ -505,16 +504,16 @@ export default {
     font-size: 0.21rem;
     .position {
       img {
-        width: 0.16rem;
-        height: 0.31rem;
+        width: 0.24rem;
+        height: 0.46rem;
       }
-      font-size: 0.21rem;
+      font-size: 0.32rem;
       font-weight: 600;
       color: #fd2e2e;
       margin-right: 0.2rem;
     }
     .all {
-      font-size: 0.21rem;
+      font-size: 0.32rem;
       font-weight: 600;
       color: #ffffff;
     }
@@ -525,7 +524,6 @@ export default {
   .card-top {
     position: relative;
     min-height: 2rem;
-
     .bg1 {
       position: absolute;
       z-index: 1;
@@ -542,22 +540,20 @@ export default {
         align-items: center;
         margin-right: 0.05rem;
         .avatar {
-          width: 0.7rem;
-          height: 0.7rem;
+          width: 0.88rem;
+          height: 0.88rem;
           display: block;
-          align-self: flex-start;
         }
         h2 {
-          font-size: 0.16rem;
+          font-size: 0.24rem;
           font-weight: 500;
           color: #ff4b82;
-          align-self: flex-start;
           margin: 0.04rem 0;
         }
         span {
           font-weight: 500;
           color: #999999;
-          font-size: 0.11rem;
+          font-size: 0.16rem;
           &.attention {
             margin: 0.04rem 0;
           }
@@ -570,15 +566,15 @@ export default {
         justify-content: space-around;
         .title {
           text-align: left;
-          font-size: 0.32rem;
+          font-size: 0.28rem;
           h2 {
             display: inline;
-            font-size: 0.19rem;
+            font-size: 0.24rem;
             font-weight: 500;
             color: #fffdfe;
             span {
               float: right;
-              font-size: 0.19rem;
+              font-size: 0.28rem;
               font-weight: 500;
               color: #ffe94b;
               img {
@@ -593,18 +589,18 @@ export default {
           display: inline;
           li {
             padding: 0 0.05rem;
-            font-size: 0.13rem;
+            font-size: 0.19rem;
             font-weight: 400;
             color: #ff4b82;
-            border-radius: 0.14rem;
+            border-radius: 0.22rem;
             border: 1px solid #ff4b82;
             text-align: center;
             display: inline-block;
-            margin-left: 0.1rem;
+            margin-left: 0.05rem;
           }
         }
         .desc {
-          font-size: 0.16rem;
+          font-size: 0.24rem;
           font-weight: 400;
           color: #fffdfe;
           text-align: left;
@@ -613,6 +609,7 @@ export default {
           display: -webkit-box;
           -webkit-box-orient: vertical;
           -webkit-line-clamp: 2;
+          margin-top: -0.2rem;
         }
         .address-limit {
           display: flex;
@@ -620,17 +617,16 @@ export default {
           align-items: center;
           margin-bottom: 0.1rem;
           p {
-            font-size: 0.19rem;
+            font-size: 0.28rem;
             font-weight: 500;
             color: #bfba92;
             img {
-              width: 0.29rem;
-              height: 0.27rem;
-              vertical-align: middle;
-              margin-right: 0.05rem;
+              width: 0.42rem;
+              height: 0.4rem;
+              margin-right: 0.06rem;
             }
             span {
-              font-size: 0.19rem;
+              font-size: 0.28rem;
               font-weight: 400;
               color: #fffdfe;
             }
@@ -643,14 +639,14 @@ export default {
       left: 50%;
       transform: translateX(-50%);
       z-index: 0;
-      bottom: -0.2rem;
+      bottom: -0.4rem;
       height: 0.9rem;
       width: 86%;
       background: url(../assets/img/bg2.png) center center no-repeat;
       background-size: 100% 100%;
       span {
         display: block;
-        font-size: 0.16rem;
+        font-size: 0.28rem;
         font-weight: 400;
         color: #833838;
         line-height: 0.53333rem;
@@ -672,7 +668,7 @@ export default {
       justify-content: space-between;
       align-items: center;
       span {
-        font-size: 0.19rem;
+        font-size: 0.28rem;
         font-weight: 500;
         color: #ff4b82;
       }
@@ -680,32 +676,32 @@ export default {
         display: flex;
         align-items: center;
         p {
-          font-size: 0.16rem;
+          font-size: 0.24rem;
           margin-right: 0.07rem;
           span {
-            font-size: 0.16rem;
+            font-size: 0.24rem;
             font-weight: 500;
             color: #f8f8f4;
           }
           img {
-            width: 0.42rem;
-            height: 0.27rem;
+            width: 0.7rem;
+            height: 0.5rem;
             vertical-align: middle;
             margin-left: 0.06rem;
           }
         }
         button {
-          background: url("../assets/img/btn-bg.png") center center no-repeat;
-          background-size: cover;
+          background: linear-gradient(#f6a0a0, #fff);
+          border-radius: 0.2rem;
           border: none;
-          padding: 0.03rem 0.12rem;
+          padding: 0.03rem 0.18rem;
           outline: none;
           img {
-            width: 0.36rem;
-            height: 0.31rem;
+            width: 0.54rem;
+            height: 0.46rem;
           }
           span {
-            font-size: 0.19rem;
+            font-size: 0.28rem;
             font-weight: 500;
             color: #b04100;
           }
@@ -718,7 +714,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.3rem 0 0.07rem;
+    padding: 0.6rem 0 0.07rem;
     margin: 0 0.23rem;
     border-bottom: 1px solid #979797;
 
@@ -731,12 +727,12 @@ export default {
 }
 .create-ip {
   position: fixed;
-  right: 0.452rem;
+  right: 0.7rem;
   bottom: 2rem;
   z-index: 99;
   img {
-    width: 1.67rem;
-    height: 0.64rem;
+    width: 2.5rem;
+    height: 0.96rem;
     display: block;
   }
 }
@@ -745,9 +741,12 @@ export default {
     .card-top {
       .bg1 {
         width: 97%;
+        .right .title h2 {
+          font-size: 0.32rem;
+        }
       }
       .bg2 {
-        bottom: 0.3rem;
+        bottom: 0.15rem;
       }
     }
   }
@@ -756,7 +755,7 @@ export default {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding: 0 0.15rem;
+      padding: 0 0.14rem;
       li {
         margin-top: 0.2rem;
         padding: 0.07rem 0;
@@ -770,6 +769,12 @@ export default {
         border-radius: 0.06rem;
         &.active {
           background: #fff;
+        }
+        &:nth-child(1) {
+          img {
+            width: 0.4rem;
+            height: 0.4rem;
+          }
         }
         &:nth-child(2) {
           span {
@@ -797,8 +802,8 @@ export default {
           }
         }
         img {
-          width: 0.3rem;
-          height: 0.3rem;
+          width: 0.44rem;
+          height: 0.44rem;
           vertical-align: middle;
           margin-right: 0.14rem;
         }
@@ -812,7 +817,7 @@ export default {
   }
   .choose-title {
     text-align: right;
-    font-size: 0.22rem;
+    font-size: 0.32rem;
     font-weight: 500;
     color: #e3b5bb;
     margin: 0.1rem 0.23rem;
@@ -822,12 +827,12 @@ export default {
     p {
       display: inline-block;
       span {
-        width: 0.33rem;
-        height: 0.33rem;
+        width: 0.5rem;
+        height: 0.5rem;
         display: inline-block;
         color: #fffdfe;
         background: #936b6b;
-        border-radius: 0.05rem;
+        border-radius: 0.1rem;
         text-align: center;
       }
     }

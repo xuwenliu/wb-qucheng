@@ -41,22 +41,22 @@
     <div class="photo-list">
       <ul class="clearfix">
         <li>
-          <img src="../assets/img/img3.png" alt />
+          <img src="http://placehold.it/218x218" alt />
         </li>
         <li>
-          <img src="../assets/img/img3.png" alt />
+          <img src="http://placehold.it/218x218" alt />
         </li>
         <li>
-          <img src="../assets/img/img3.png" alt />
+          <img src="http://placehold.it/218x218" alt />
         </li>
         <li>
-          <img src="../assets/img/img3.png" alt />
+          <img src="http://placehold.it/218x218" alt />
         </li>
         <li>
-          <img src="../assets/img/img3.png" alt />
+          <img src="http://placehold.it/218x218" alt />
         </li>
         <li>
-          <img src="../assets/img/img3.png" alt />
+          <img src="http://placehold.it/218x218" alt />
         </li>
       </ul>
     </div>
@@ -86,10 +86,6 @@
       <div class="love">
         <img src="../assets/img/love.png" alt />
         <span>超级温柔</span>
-      </div>
-      <div class="love">
-        <img src="../assets/img/love.png" alt />
-        <span>热情</span>
       </div>
     </div>
 
@@ -155,12 +151,12 @@ export default {
       .desc {
         text-align: left;
         h2 {
-          font-size: 0.27rem;
+          font-size: 0.4rem;
           font-weight: 600;
           color: #ffffff;
         }
         p {
-          font-size: 0.16rem;
+          font-size: 0.24rem;
           font-weight: 400;
           color: #ffffff;
         }
@@ -169,30 +165,31 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 0.2rem;
-        font-size: 0.19rem;
+        margin-right: 0.5rem;
+        font-size: 0.28rem;
         font-weight: 500;
         color: #ffffff;
-        padding: 0 0.12rem;
-        height: 0.48rem;
+        padding: 0.04rem 0.14rem;
         background: linear-gradient(180deg, #f885a3 0%, #ee4e6a 100%);
-        border-radius: 0.16rem;
+        border-radius: 0.24rem;
       }
     }
     .right-tag {
       margin-top: 0.2rem;
+      padding-right: 0.2rem;
       ul {
-        font-size: 0.16rem;
+        font-size: 0.24rem;
         text-align: left;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         li {
-          font-size: 0.16rem;
+          font-size: 0.24rem;
           font-weight: 400;
           color: #ff4b82;
           border: 1px solid #ff4b82;
-          border-radius: 0.14rem;
-          display: inline-block;
-          margin-right: 0.11rem;
-          padding: 0 0.11rem;
+          border-radius: 0.2rem;
+          padding: 0 0.14rem;
         }
       }
     }
@@ -202,46 +199,47 @@ export default {
   background: #2d2941;
   box-shadow: 0rem 0rem 0.08rem 0rem rgba(0, 0, 0, 0.37);
   border-radius: 0.13rem;
-  margin: 0 0.4rem;
-  margin-top: -22%;
+  margin: 0 0.48rem;
+  margin-top: -19%;
   .title {
-    font-size: 0.19rem;
-    padding: 0.05rem 0;
+    font-size: 0.28rem;
     border-bottom: 1px dashed #fff;
-    margin: 0 0.1rem;
+    margin: 0 0.1rem 0.16rem;
+    line-height: 0.52rem;
+    
     span {
       position: relative;
-      font-size: 0.19rem;
+      font-size: 0.28rem;
       font-weight: 600;
       color: #ff4b82;
       &::after,
       &::before {
         content: "";
-        width: 0.36rem;
-        height: 0.03rem;
+        width: 0.54rem;
+        height: 0.04rem;
         background: #ff4b82;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        right: -0.51rem;
+        right: -0.76rem;
       }
       &::before {
         right: auto;
-        left: -0.51rem;
+        left: -0.76rem;
       }
     }
   }
   p {
-    font-size: 0.16rem;
+    font-size: 0.24rem;
     font-weight: 400;
     color: #ffffff;
-    padding: 0.1rem;
+    padding:0 0.1rem;
     text-align: left;
   }
 }
 .photo-list {
   padding: 0 0.32rem;
-  margin-top: 0.16rem;
+  margin-top: 0.24rem;
   ul {
     li {
       float: left;
@@ -257,17 +255,17 @@ export default {
   }
 }
 .card-business {
-  margin-top: 0.16rem;
+  margin-top: 0.24rem;
   p {
     &::before {
       content: "1";
-      width: 0.24rem;
-      height: 0.24rem;
+      width: 0.36rem;
+      height: 0.36rem;
       background: #ff4b82;
       border-radius: 50%;
       display: inline-block;
       text-align: center;
-      line-height: 0.24rem;
+      line-height: 0.36rem;
       margin-right: 0.12rem;
     }
     &:nth-of-type(2) {
@@ -295,20 +293,20 @@ export default {
   justify-content: center;
   align-items: center;
   .love-icon {
-    width: 1.13rem;
-    height: 1.13rem;
+    width: 1.7rem;
+    height: 1.7rem;
     vertical-align: middle;
   }
   .love {
-    font-size: 0.16rem;
+    font-size: 0.24rem;
     display: inline-block;
     position: absolute;
     left: 0;
     top: 0;
     animation: heartBeat 1s infinite;
     img {
-      width: 0.41rem;
-      height: 0.41rem;
+      width: 0.62rem;
+      height: 0.62rem;
     }
     span {
       font-size: 0.16rem;

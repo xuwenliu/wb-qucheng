@@ -2,11 +2,11 @@
   <div class="footer">
     <ul>
       <router-link tag="li" :to="{name:'Home'}" :class="currentIndex===0?'active':''">
-        <img src="../assets/img/img1.png" alt />
+        <img src="http://placehold.it/218x218" alt />
         <span>去城</span>
       </router-link>
       <router-link tag="li" :to="{name:'Mine'}" :class="currentIndex===1?'active':''">
-        <img src="../assets/img/img1.png" alt />
+        <img src="http://placehold.it/218x218" alt />
         <span>ta</span>
       </router-link>
     </ul>
