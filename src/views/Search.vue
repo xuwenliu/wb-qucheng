@@ -143,7 +143,8 @@ export default {
   align-items: center;
   box-shadow: 0 0 4px 0 #8d8d8d;
   &.active {
-    background: #fff;
+    background: #ffecdf;
+    box-shadow: 0 0 4px 0 #000;
   }
   img {
     width: 0.96rem;
@@ -197,21 +198,29 @@ export default {
       }
       &.active {
         .bg {
-          background: url("../assets/img/sanjiao_active.png") center center
+          background: url("../assets/img/sanjiao_active1.png") center center
             no-repeat;
           background-size: 90% 100%;
         }
-        .line {
-          background: #e04141 !important;
-        }
-        h2 {
-          color: #ff7f7f !important;
-        }
-        span {
-          color: #e04141 !important;
-        }
+        // .line {
+        //   background: #e04141 !important;
+        // }
+        // h2 {
+        //   color: #ff7f7f !important;
+        // }
+        // span {
+        //   color: #e04141 !important;
+        // }
       }
       &:nth-child(2) {
+        &.active {
+          .bg {
+            background: url("../assets/img/sanjiao_active2.png") center center
+              no-repeat;
+            background-size: 90% 100%;
+          }
+        }
+
         .line {
           background: #41dc66;
         }
@@ -223,6 +232,13 @@ export default {
         }
       }
       &:nth-child(3) {
+        &.active {
+          .bg {
+            background: url("../assets/img/sanjiao_active3.png") center center
+              no-repeat;
+            background-size: 90% 100%;
+          }
+        }
         .line {
           background: #ffec4b;
         }
@@ -234,6 +250,13 @@ export default {
         }
       }
       &:nth-child(4) {
+        &.active {
+          .bg {
+            background: url("../assets/img/sanjiao_active4.png") center center
+              no-repeat;
+            background-size: 90% 100%;
+          }
+        }
         .line {
           background: #ff814b;
         }
@@ -245,6 +268,13 @@ export default {
         }
       }
       &:nth-child(5) {
+        &.active {
+          .bg {
+            background: url("../assets/img/sanjiao_active5.png") center center
+              no-repeat;
+            background-size: 90% 100%;
+          }
+        }
         .line {
           background: #14c16d;
         }
@@ -256,6 +286,13 @@ export default {
         }
       }
       &:nth-child(6) {
+        &.active {
+          .bg {
+            background: url("../assets/img/sanjiao_active6.png") center center
+              no-repeat;
+            background-size: 90% 100%;
+          }
+        }
         .line {
           background: #d04472;
         }
@@ -267,6 +304,13 @@ export default {
         }
       }
       &:nth-child(7) {
+        &.active {
+          .bg {
+            background: url("../assets/img/sanjiao_active7.png") center center
+              no-repeat;
+            background-size: 90% 100%;
+          }
+        }
         .line {
           background: #c17e18;
         }
@@ -279,6 +323,13 @@ export default {
       }
 
       &:nth-child(8) {
+        &.active {
+          .bg {
+            background: url("../assets/img/sanjiao_active8.png") center center
+              no-repeat;
+            background-size: 90% 100%;
+          }
+        }
         .line {
           background: #4b7aff;
         }
@@ -290,6 +341,13 @@ export default {
         }
       }
       &:nth-child(9) {
+        &.active {
+          .bg {
+            background: url("../assets/img/sanjiao_active9.png") center center
+              no-repeat;
+            background-size: 90% 100%;
+          }
+        }
         .line {
           background: #fc3ba9;
         }
@@ -301,6 +359,13 @@ export default {
         }
       }
       &:nth-child(10) {
+        &.active {
+          .bg {
+            background: url("../assets/img/sanjiao_active10.png") center center
+              no-repeat;
+            background-size: 90% 100%;
+          }
+        }
         .line {
           background: #9c5ff9;
         }
