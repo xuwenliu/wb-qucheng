@@ -569,7 +569,7 @@ export default {
           font-size: 0.28rem;
           h2 {
             display: inline;
-            font-size: 0.24rem;
+            font-size: 0.28rem;
             font-weight: 500;
             color: #fffdfe;
             span {
@@ -741,9 +741,6 @@ export default {
     .card-top {
       .bg1 {
         width: 97%;
-        .right .title h2 {
-          font-size: 0.32rem;
-        }
       }
       .bg2 {
         bottom: 0.15rem;
