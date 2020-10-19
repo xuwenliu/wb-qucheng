@@ -497,6 +497,7 @@ export default {
       font-size: 0.28rem;
       i {
         vertical-align: middle;
+        font-size: 0.28rem;
       }
     }
   }

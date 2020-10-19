@@ -233,7 +233,7 @@ export default {
     font-size: 0.24rem;
     font-weight: 400;
     color: #ffffff;
-    padding:0 0.1rem;
+    padding:0.1rem 0.1rem;
     text-align: left;
   }
 }

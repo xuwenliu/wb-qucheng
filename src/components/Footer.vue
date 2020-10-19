@@ -48,6 +48,9 @@ export default {
       &.active {
         color: #ff4b82;
       }
+      span{
+        font-size: 0.24rem;
+      }
       img {
         width: 0.56rem;
         height: 0.56rem;
